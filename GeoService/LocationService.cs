@@ -9,7 +9,8 @@ namespace GeoService;
 public class LocationService : BackgroundService
 {
     private readonly ILogger<LocationService> _logger;
-    private GeometryFactory _gf = NetTopologySuite.NtsGeometryServices.Instance.CreateGeometryFactory(4326);
+    private const int EPSG4326_SRID = 4326; // projection format for world
+    private GeometryFactory _gf = NetTopologySuite.NtsGeometryServices.Instance.CreateGeometryFactory(EPSG4326_SRID);
     private MultiPoint _stations;
 
     public LocationService(ILogger<LocationService> logger)
