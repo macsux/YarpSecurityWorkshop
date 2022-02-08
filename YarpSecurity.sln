@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{627F6683-B85A-4E03-9773-496DE7BA1CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherService\WeatherService.csproj", "{9079B003-BFE0-4F70-BE09-07AFA6B022E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoService", "GeoService\GeoService.csproj", "{D2A39146-A03E-4580-93A2-D748BF3AE25A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{627F6683-B85A-4E03-9773-496DE7BA1CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627F6683-B85A-4E03-9773-496DE7BA1CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627F6683-B85A-4E03-9773-496DE7BA1CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627F6683-B85A-4E03-9773-496DE7BA1CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9079B003-BFE0-4F70-BE09-07AFA6B022E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9079B003-BFE0-4F70-BE09-07AFA6B022E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9079B003-BFE0-4F70-BE09-07AFA6B022E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9079B003-BFE0-4F70-BE09-07AFA6B022E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A39146-A03E-4580-93A2-D748BF3AE25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A39146-A03E-4580-93A2-D748BF3AE25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A39146-A03E-4580-93A2-D748BF3AE25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A39146-A03E-4580-93A2-D748BF3AE25A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
