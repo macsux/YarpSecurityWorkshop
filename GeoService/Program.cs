@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<LocationService>();
 builder.Services.AddHostedService(s => s.GetRequiredService<LocationService>());
 var app = builder.Build();
-
+app.UseCors(p => p.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -19,8 +19,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

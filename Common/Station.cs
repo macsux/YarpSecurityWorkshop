@@ -1,15 +1,17 @@
-﻿namespace Common;
+﻿using System.Xml.Serialization;
 
-public struct Station
+namespace Common;
+
+public record Station
 {
-    public Station(string stationId, double latitude, double longitude)
-    {
-        StationId = stationId;
-        Latitude = latitude;
-        Longitude = longitude;
-    }
-
+    [XmlElement("station_id")]
     public string StationId { get; set; }
+    [XmlElement("latitude")]
     public double Latitude { get; set;}
+    [XmlElement("longitude")]
     public double Longitude { get; set;}
+    [XmlElement("site")]
+    public string Site { get; set;}
+    [XmlElement("state")]
+    public string State { get; set;}
 }

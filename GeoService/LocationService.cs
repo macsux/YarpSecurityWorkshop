@@ -27,7 +27,7 @@ public class LocationService : BackgroundService
         var stationPoints = stationsList.Select(station =>
         {
             var point = _gf.CreatePoint(new Coordinate(station.Longitude, station.Latitude));
-            point.UserData = station.StationId;
+            point.UserData = station;
             return point;
         }).ToArray();
         _stations = _gf.CreateMultiPoint(stationPoints);
@@ -42,6 +42,6 @@ public class LocationService : BackgroundService
             .Skip(1) // closest point is the one we actually searched by
             .First()
             .GeometryComponent;
-        return new Station((string)closestPoint.UserData, closestPoint.Coordinate.Y, closestPoint.Coordinate.X);
+        return (Station)closestPoint.UserData;
     }
 }

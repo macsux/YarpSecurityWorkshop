@@ -1,0 +1,49 @@
+﻿@page "/"
+
+<div class="container" id="wrapper">
+  <div class="container-fluid" id="current-weather">
+    <div class="row">
+      
+      <!-- Right panel -->
+      <div class="col-md-4 col-sm-5">
+        <h5><spam id="cityName">@station.Site</spam>, <spam id="cityCode">@station.State</spam></h5>
+        <h6 id="localDate">@currentTime.ToString("D")</h6>
+        <h5 id="localTime">@currentTime.ToString("HH:mm:ss tt")</h5>
+        @* <a id="refreshButton" href="#"><i class="fa fa-refresh fa-fw" aria-hidden="true"></i> Refresh</a> *@
+      </div>
+      
+      <!-- Center panel -->
+      <div class="col-md-3 col-sm-7" style="margin: 10px auto;padding:0;">
+        <div class="row">
+          <i class="wi" id ="main-icon" style="font-size: 85px;"></i>
+          <div>
+            <spam id="mainTemperature">@metar?.Temperature?.Value</spam>
+            <p id="tempDescription"></p>
+          </div>
+          <p style="font-size: 1.5rem;"><a href="#" class="active" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a></p>
+        </div>
+      </div>
+      
+      <!-- Left panel -->
+      <div class="col-xs-12 col-sm-12 col-md-3 row" style="text-align: right;">
+        <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+          <h6>Humidity: <spam id="humidity">@RelativeHumidity</spam>%</h6>
+        </div>
+        <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+          <h6>Clouds: <spam id="clouds">@metar.CloudLayers.FirstOrDefault()?.CloudType.ToString()</spam></h6>
+        </div>
+        <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+          <h6>Wind: <spam id="wind">@metar.SurfaceWind?.Speed</spam> kts</h6>
+        </div>
+        @* <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info"> *@
+        @*   <h6>High: <spam id="mainTempHot">@metar</spam>°</h6> *@
+        @* </div> *@
+        @* <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info"> *@
+        @*   <h6>Low: <spam id="mainTempLow"></spam>°</h6> *@
+        @* </div> *@
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
