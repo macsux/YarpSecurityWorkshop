@@ -4,9 +4,9 @@
     "WeatherService": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5130",
+      "applicationUrl": "https://localhost:5130", //
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -15,8 +15,8 @@ public class StationController : ControllerBase
     }
 
     [HttpGet("closest", Name = "Closest")]
-    public Station Get(double latitude, double longitude)
+    public async Task<Station> Get(double latitude, double longitude)
     {
-        return _locationService.FindClosestStation(latitude, longitude);
+        return await _locationService.FindClosestStation(latitude, longitude);
     }
 }

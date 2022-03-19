@@ -3,6 +3,7 @@
 public abstract class DataFeedService : BackgroundService
 {
     protected ILogger Logger { get; }
+    protected TaskCompletionSource Initialized { get; } = new();
 
     protected DataFeedService(ILogger logger)
     {
@@ -22,6 +23,7 @@ public abstract class DataFeedService : BackgroundService
             Logger.LogDebug(e, e.Message);
         }
         Import();
+        Initialized.TrySetResult();
     }
     
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)

@@ -20,6 +20,7 @@ public class MetarService : DataFeedService
 
     public async Task<Metar?> GetMetar(string stationId)
     {
+        await Initialized.Task;
         _metars.TryGetValue(stationId.ToUpper(), out var result);
         return result;
     }

@@ -1,0 +1,35 @@
+security:
+  clients:
+    - clientId: "gui"
+      allowedGrantTypes:
+        - client_credentials
+#        - hybrid
+        # - password
+        # - delegation
+        # - token-exchange
+        - authorization_code
+        # - implicit
+#      requirePkce: true
+      redirectUris:
+        - http.+
+      allowedScopes: # scopes that app can request
+        - api1.read
+        - profile
+        - openid
+      requireConsent: false # is the user prompted for concept are scopes autogranted
+      AllowOfflineAccess: true
+      clientSecrets:
+        - value: password
+  apiResources:
+    - name: "app1"
+      displayName: "app1"
+      scopes:
+        - name: app1.read
+        - name: openid
+  users:
+    - subjectId: andrew
+      username: andrew
+      password: p@ssw0rd
+    - subjectId: ed
+      username: ed
+      password: p@ssw0rd

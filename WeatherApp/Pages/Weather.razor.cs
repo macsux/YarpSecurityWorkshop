@@ -1,42 +1,61 @@
-﻿using System.Net.Http.Json;
+﻿using System;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading;
+using System.Threading.Tasks;
 using Common;
 using Darnton.Blazor.DeviceInterop.Geolocation;
 using MetarParserCore.Enums;
 using MetarParserCore.Objects;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace WeatherApp.Pages;
 
 public partial class Weather
 {
+    [Inject] GeolocationService GeolocationService { get; set; } = null!;
     [Inject]
-    GeolocationService geolocationService { get; set; }
-    [Inject]
-    HttpClient httpClient { get; set; }
-    private DateTime currentTime;
-    private decimal lon;
-    private decimal lat;
-    GeolocationResult CurrentPositionResult;
+    HttpClient HttpClient { get; set; } = null!;
+
+    
+    private DateTime CurrentTime { get; set; }
+    GeolocationResult CurrentPositionResult { get; set; }
     Metar metar = new ();
     Station station = new ();
     private Timer _timer;
     private int RelativeHumidity => 100 - 5 * (metar.Temperature?.Value - metar.Temperature?.DewPoint ?? 0);
-
+    private int Temp => ConvertToF ? (int)(metar.Temperature.Value * 1.8 + 32) : metar?.Temperature?.Value ?? 0;
+    private bool ConvertToF { get; set; }
+    
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthenticationState { get; set; }
+    private string User { get; set; }
+    private bool IsLoading { get; set; } = true;
     
     protected override async Task OnInitializedAsync()
     {
+        User = (await AuthenticationState).User?.Identity?.Name;
         _timer = new Timer(OnTimerTick, null, 0, 1000);
     
-        CurrentPositionResult = await geolocationService.GetCurrentPosition();
+        CurrentPositionResult = await GeolocationService.GetCurrentPosition();
         var coords = CurrentPositionResult.Position.Coords;
-        station = await httpClient.GetFromJsonAsync<Station>($"http://localhost:5228/station/closest?latitude={coords.Latitude}&longitude={coords.Longitude}") ?? new();
-        metar = await httpClient.GetFromJsonAsync<Metar>($"http://localhost:5130/WeatherForecast/forecast/{station.StationId}") ?? new();
+        station = await HttpClient.GetFromJsonAsync<Station>($"/api/station/closest?latitude={coords.Latitude}&longitude={coords.Longitude}") ?? new();
+        metar = await HttpClient.GetFromJsonAsync<Metar>($"/api/weatherforecast/{station.StationId}") ?? new();
+        IsLoading = false;
     }
 
     private void OnTimerTick(object? state)
     {
-        currentTime = DateTime.Now;
-        StateHasChanged();
-    
-    } 
+        CurrentTime = DateTime.Now;
+    }
+
+    private void SetUnitC()
+    {
+        ConvertToF = false;
+    }
+    private void SetUnitF()
+    {
+        ConvertToF = true;
+    }
 }

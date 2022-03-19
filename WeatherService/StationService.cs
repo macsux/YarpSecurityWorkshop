@@ -13,7 +13,11 @@ public class StationService : DataFeedService
     {
     }
 
-    public Task<List<Station>> GetStations() => Task.FromResult(_stations);
+    public async Task<List<Station>> GetStations()
+    {
+        await Initialized.Task;
+        return _stations;
+    }
 
     protected override async Task Download(CancellationToken cancellationToken)
     {

@@ -12,17 +12,18 @@ public class LocationService : BackgroundService
     private const int EPSG4326_SRID = 4326; // projection format for world
     private GeometryFactory _gf = NetTopologySuite.NtsGeometryServices.Instance.CreateGeometryFactory(EPSG4326_SRID);
     private MultiPoint _stations;
+    private readonly HttpClient _httpClient;
+    TaskCompletionSource _initialized = new();
 
-    public LocationService(ILogger<LocationService> logger)
+    public LocationService(ILogger<LocationService> logger, IHttpClientFactory clientFactory)
     {
         _logger = logger;
+        _httpClient = clientFactory.CreateClient("WeatherService");
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var httpClient = new HttpClient();
-        var stationsList = await httpClient.GetFromJsonAsync<List<Station>>("http://localhost:5130/WeatherForecast/station", stoppingToken);
-        // _stations = stationsList.ToDictionary(x => new Coordinate(x.Latitude, x.Longitude), x => x.StationId);
+        var stationsList = await _httpClient.GetFromJsonAsync<List<Station>>("station", stoppingToken) ?? new();
         
         var stationPoints = stationsList.Select(station =>
         {
@@ -31,10 +32,13 @@ public class LocationService : BackgroundService
             return point;
         }).ToArray();
         _stations = _gf.CreateMultiPoint(stationPoints);
+        _logger.LogInformation($"Loaded {stationsList.Count} stations");
+        _initialized.TrySetResult();
     }
 
-    public Station FindClosestStation(double latitude, double longitude)
+    public async Task<Station> FindClosestStation(double latitude, double longitude)
     {
+        await _initialized.Task;
         var sourceLocation = _gf.CreatePoint(new Coordinate(longitude, latitude));
         var distOp = new DistanceOp(sourceLocation, _stations);
         
