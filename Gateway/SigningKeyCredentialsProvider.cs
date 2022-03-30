@@ -46,8 +46,6 @@ public class SigningKeyCredentialsProvider : ISigningCredentialStore, IValidatio
 
     public Task<SigningCredentials> GetSigningCredentialsAsync()
     {
-        var rsa = RSA.Create();
-        var key = new RsaSecurityKey(rsa);
         return Task.FromResult(new SigningCredentials(_signingKey, SecurityAlgorithms.RsaSha256));
     }
 
