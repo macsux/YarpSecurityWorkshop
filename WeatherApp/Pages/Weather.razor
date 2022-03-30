@@ -37,13 +37,13 @@ else
 
         <div class="col-xs-12 col-sm-12 col-md-3 row overflow-hidden" style="text-align: right;">
           <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
-            <h6>Humidity: <spam id="humidity">@RelativeHumidity</spam>%</h6>
+            <h6>Humidity: <spam id="humidity">@WeatherReport.RelativeHumidity</spam>%</h6>
           </div>
           <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
-            <h6>Clouds: <spam id="clouds">@metar.CloudLayers?.FirstOrDefault()?.CloudType</spam></h6>
+            <h6>Clouds: <spam id="clouds">@WeatherReport.Clouds</spam></h6>
           </div>
           <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
-            <h6>Wind: <spam id="wind">@metar.SurfaceWind?.Speed</spam> kts</h6>
+            <h6>Wind: <spam id="wind">@WeatherReport.WindSpeedKmHr</spam> km/hr</h6>
           </div>
           @* <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info"> *@
           @*   <h6>High: <spam id="mainTempHot">@metar</spam>°</h6> *@

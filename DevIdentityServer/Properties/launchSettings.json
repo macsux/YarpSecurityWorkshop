@@ -2,7 +2,7 @@
   "profiles": {
     "SelfHost": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "dotnetRunMessages": "true",
       "hotReloadProfile": "aspnetcore",
       "environmentVariables": {

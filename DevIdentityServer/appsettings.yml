@@ -11,7 +11,7 @@ security:
         # - implicit
 #      requirePkce: true
       redirectUris:
-        - http.+
+        - https.+
       allowedScopes: # scopes that app can request
         - api1.read
         - profile

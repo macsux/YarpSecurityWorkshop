@@ -1,0 +1,35 @@
+---
+Logging:
+  LogLevel:
+    Default: Debug
+    Microsoft.AspNetCore: Debug
+AllowedHosts: "*"
+ReverseProxy:
+  Routes:
+    geoservice:
+      ClusterId: geoservice
+      Match:
+        Path: "/api/station/closest"
+      Transforms:
+        - PathRemovePrefix: "/api"
+    weatherservice-diag:
+      ClusterId: weatherservice
+      AuthorizationPolicy: default
+      Match:
+        Path: "/diag"
+    weatherservice:
+      ClusterId: weatherservice
+      Match:
+        Path: "/api/{**catch-all}"
+      Transforms:
+        - PathRemovePrefix: "/api"
+    
+  Clusters:
+    geoservice:
+      Destinations:
+        geoservice-1:
+          Address: https://localhost:5228/
+    weatherservice:
+      Destinations:
+        weatherservice-1:
+          Address: https://localhost:5130/

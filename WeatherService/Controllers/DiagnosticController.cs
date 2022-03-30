@@ -8,7 +8,6 @@ namespace WeatherService.Controllers;
 public class DiagnosticController : Controller
 {
     [HttpGet("/diag")]
-    // [Authorize("loggedin")]
     public string Diag()
     {
         StringBuilder sb = new();

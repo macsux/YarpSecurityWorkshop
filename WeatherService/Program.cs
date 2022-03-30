@@ -6,6 +6,7 @@ using WeatherService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<MetarService>();
 builder.Services.AddHostedService(s => s.GetRequiredService<MetarService>());
 

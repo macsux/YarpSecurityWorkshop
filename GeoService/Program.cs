@@ -13,7 +13,7 @@ builder.Services.AddSingleton<LocationService>();
 builder.Services.AddHostedService(s => s.GetRequiredService<LocationService>());
 builder.Services.AddHttpClient("WeatherService", client =>
     {
-        client.BaseAddress = new Uri("https://localhost:5130/");
+        client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("WeatherServiceUrl"));
     })
     .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]
     {

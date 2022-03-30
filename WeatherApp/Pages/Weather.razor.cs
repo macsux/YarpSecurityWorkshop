@@ -21,11 +21,13 @@ public partial class Weather
     
     private DateTime CurrentTime { get; set; }
     GeolocationResult CurrentPositionResult { get; set; }
-    Metar metar = new ();
+    // Metar metar = new ();
     Station station = new ();
     private Timer _timer;
-    private int RelativeHumidity => 100 - 5 * (metar.Temperature?.Value - metar.Temperature?.DewPoint ?? 0);
-    private int Temp => ConvertToF ? (int)(metar.Temperature.Value * 1.8 + 32) : metar?.Temperature?.Value ?? 0;
+    // private int RelativeHumidity => 100 - 5 * (metar.Temperature?.Value - metar.Temperature?.DewPoint ?? 0);
+    // private int Temp => ConvertToF ? (int)(metar.Temperature.Value * 1.8 + 32) : metar?.Temperature?.Value ?? 0;
+    private WeatherReport WeatherReport { get; set; }
+    private int Temp => ConvertToF ? WeatherReport.TempF : WeatherReport.TempC;
     private bool ConvertToF { get; set; }
     
     [CascadingParameter]
@@ -41,7 +43,8 @@ public partial class Weather
         CurrentPositionResult = await GeolocationService.GetCurrentPosition();
         var coords = CurrentPositionResult.Position.Coords;
         station = await HttpClient.GetFromJsonAsync<Station>($"/api/station/closest?latitude={coords.Latitude}&longitude={coords.Longitude}") ?? new();
-        metar = await HttpClient.GetFromJsonAsync<Metar>($"/api/weatherforecast/{station.StationId}") ?? new();
+        WeatherReport = await HttpClient.GetFromJsonAsync<WeatherReport>($"/api/weatherforecast/{station.StationId}") ?? new();
+        
         IsLoading = false;
     }
 

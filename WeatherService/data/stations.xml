@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://www.aviationweather.gov/static/adds/schema/station1_0.xsd">
-  <request_index>268350219</request_index>
+  <request_index>86616562</request_index>
   <data_source name="stations" />
   <request type="retrieve" />
   <errors />
   <warnings />
-  <time_taken_ms>86</time_taken_ms>
-  <data num_results="8736">
+  <time_taken_ms>111</time_taken_ms>
+  <data num_results="8759">
     <Station>
       <station_id>AGGA</station_id>
       <latitude>-8.7</latitude>
@@ -26,6 +26,7 @@
       <site>CHOISEUL BAY</site>
       <country>SB</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -774,6 +775,7 @@
       <site>HUSAVIK</site>
       <country>IS</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -9657,7 +9659,7 @@
       <latitude>55.18</latitude>
       <longitude>-118.88</longitude>
       <elevation_m>668.0</elevation_m>
-      <site>GRANDE PRAIRE AR</site>
+      <site>GRANDE PRAIRIE A</site>
       <state>AB</state>
       <country>CA</country>
       <site_type>
@@ -13005,6 +13007,7 @@
       <site>MINNA AIRPORT</site>
       <country>NG</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -14446,6 +14449,7 @@
       <site_type>
         <METAR />
         <rawinsonde />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -17601,6 +17605,7 @@
     </Station>
     <Station>
       <station_id>ENAS</station_id>
+      <wmo_id>00004</wmo_id>
       <latitude>78.92</latitude>
       <longitude>11.92</longitude>
       <elevation_m>8.0</elevation_m>
@@ -18252,7 +18257,6 @@
     </Station>
     <Station>
       <station_id>ENRS</station_id>
-      <wmo_id>00004</wmo_id>
       <latitude>67.52</latitude>
       <longitude>12.1</longitude>
       <elevation_m>4.0</elevation_m>
@@ -20355,6 +20359,7 @@
       <country>LV</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -21915,6 +21920,7 @@
       <country>BW</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -23054,6 +23060,7 @@
       <country>ZM</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -24342,11 +24349,12 @@
       <wmo_id>67335</wmo_id>
       <latitude>-25.05</latitude>
       <longitude>33.62</longitude>
-      <elevation_m>5.0</elevation_m>
+      <elevation_m>3.0</elevation_m>
       <site>XAI XAI</site>
       <country>MZ</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -26370,6 +26378,19 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>GECE</station_id>
+      <wmo_id>60320</wmo_id>
+      <latitude>35.88</latitude>
+      <longitude>-5.3</longitude>
+      <elevation_m>2.0</elevation_m>
+      <site>CUETA</site>
+      <country>ES</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>GEML</station_id>
       <wmo_id>60338</wmo_id>
       <latitude>35.27</latitude>
@@ -27987,6 +28008,7 @@
       <site>EL ALAMEIN</site>
       <country>EG</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -28171,6 +28193,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>HEOC</station_id>
+      <latitude>29.82</latitude>
+      <longitude>30.82</longitude>
+      <elevation_m>246.0</elevation_m>
+      <site>OCTOBER</site>
+      <country>EG</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -31937,18 +31970,6 @@
       </site_type>
     </Station>
     <Station>
-      <station_id>K4CO</station_id>
-      <latitude>29.78</latitude>
-      <longitude>-93.18</longitude>
-      <elevation_m>1.0</elevation_m>
-      <site>PHI OIL PLATF</site>
-      <state>LA</state>
-      <country>US</country>
-      <site_type>
-        <METAR />
-      </site_type>
-    </Station>
-    <Station>
       <station_id>K4CR</station_id>
       <latitude>34.1</latitude>
       <longitude>-105.67</longitude>
@@ -32341,6 +32362,18 @@
       <elevation_m>188.0</elevation_m>
       <site>SILER CITY</site>
       <state>NC</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K63S</station_id>
+      <latitude>48.53</latitude>
+      <longitude>-117.88</longitude>
+      <elevation_m>571.0</elevation_m>
+      <site>COLVILLE</site>
+      <state>WA</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -32885,6 +32918,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>K8B0</station_id>
+      <latitude>44.98</latitude>
+      <longitude>-70.65</longitude>
+      <elevation_m>552.0</elevation_m>
+      <site>RANGELEY</site>
+      <state>ME</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>K8D3</station_id>
       <latitude>45.67</latitude>
       <longitude>-96.98</longitude>
@@ -32927,6 +32972,18 @@
       <elevation_m>1419.0</elevation_m>
       <site>BROWNING</site>
       <state>MT</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K8T6</station_id>
+      <latitude>28.37</latitude>
+      <longitude>-98.12</longitude>
+      <elevation_m>39.0</elevation_m>
+      <site>GEORGE WEST</site>
+      <state>TX</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -33156,6 +33213,18 @@
       <elevation_m>1246.0</elevation_m>
       <site>THREE FORKS</site>
       <state>MT</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K9S9</station_id>
+      <latitude>45.45</latitude>
+      <longitude>-119.68</longitude>
+      <elevation_m>498.0</elevation_m>
+      <site>LEXINGTON</site>
+      <state>OR</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -35305,6 +35374,7 @@
     </Station>
     <Station>
       <station_id>KB23</station_id>
+      <wmo_id>00002</wmo_id>
       <latitude>40.6</latitude>
       <longitude>-116.87</longitude>
       <elevation_m>1381.0</elevation_m>
@@ -35382,6 +35452,18 @@
       <elevation_m>199.0</elevation_m>
       <site>COLUMBUS</site>
       <state>IN</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KBAM</station_id>
+      <latitude>40.6</latitude>
+      <longitude>-116.87</longitude>
+      <elevation_m>1381.0</elevation_m>
+      <site>BATTLE MTN (VOR)</site>
+      <state>NV</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -35554,6 +35636,18 @@
       <elevation_m>256.0</elevation_m>
       <site>BLACK RIVER FALL</site>
       <state>WI</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KBCR</station_id>
+      <latitude>30.85</latitude>
+      <longitude>-85.6</longitude>
+      <elevation_m>26.0</elevation_m>
+      <site>BONIFAY TRI-CTY</site>
+      <state>FL</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -38091,18 +38185,6 @@
       </site_type>
     </Station>
     <Station>
-      <station_id>KCGX</station_id>
-      <latitude>41.87</latitude>
-      <longitude>-87.58</longitude>
-      <elevation_m>181.0</elevation_m>
-      <site>CHICAGO/MEIGS</site>
-      <state>IL</state>
-      <country>US</country>
-      <site_type>
-        <METAR />
-      </site_type>
-    </Station>
-    <Station>
       <station_id>KCGZ</station_id>
       <latitude>32.95</latitude>
       <longitude>-111.77</longitude>
@@ -39645,7 +39727,6 @@
     </Station>
     <Station>
       <station_id>KCXP</station_id>
-      <wmo_id>00002</wmo_id>
       <latitude>39.18</latitude>
       <longitude>-119.73</longitude>
       <elevation_m>1431.0</elevation_m>
@@ -41851,6 +41932,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -41907,7 +41989,7 @@
       <station_id>KEGT</station_id>
       <latitude>37.32</latitude>
       <longitude>-97.38</longitude>
-      <elevation_m>390.0</elevation_m>
+      <elevation_m>387.0</elevation_m>
       <site>WELLINGTON</site>
       <state>KS</state>
       <country>US</country>
@@ -42117,6 +42199,18 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KEKX</station_id>
+      <latitude>37.68</latitude>
+      <longitude>-85.92</longitude>
+      <elevation_m>234.0</elevation_m>
+      <site>ELIZABETHTOWN</site>
+      <state>KY</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -45234,6 +45328,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KGNG</station_id>
+      <latitude>42.92</latitude>
+      <longitude>-114.77</longitude>
+      <elevation_m>1128.0</elevation_m>
+      <site>GOODING</site>
+      <state>ID</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KGNL</station_id>
       <latitude>39.13</latitude>
       <longitude>-100.62</longitude>
@@ -46821,6 +46927,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KHLB</station_id>
+      <latitude>39.35</latitude>
+      <longitude>-85.27</longitude>
+      <elevation_m>297.0</elevation_m>
+      <site>BATESVILLE</site>
+      <state>IN</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KHLC</station_id>
       <latitude>39.37</latitude>
       <longitude>-99.83</longitude>
@@ -47509,6 +47627,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KHTH</station_id>
+      <latitude>38.55</latitude>
+      <longitude>-118.63</longitude>
+      <elevation_m>1281.0</elevation_m>
+      <site>HAWTHORNE</site>
+      <state>NV</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KHTL</station_id>
       <wmo_id>72638</wmo_id>
       <latitude>44.35</latitude>
@@ -47569,6 +47699,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -49245,6 +49376,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -49782,6 +49914,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -52426,6 +52559,7 @@
       <state>TN</state>
       <country>US</country>
       <site_type>
+        <METAR />
         <WFO_office />
       </site_type>
     </Station>
@@ -53662,6 +53796,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KMQW</station_id>
+      <latitude>32.1</latitude>
+      <longitude>-82.88</longitude>
+      <elevation_m>62.0</elevation_m>
+      <site>MC RAE</site>
+      <state>GA</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KMQY</station_id>
       <latitude>36.02</latitude>
       <longitude>-86.52</longitude>
@@ -53976,6 +54122,18 @@
       <country>US</country>
       <site_type>
         <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KMTR</station_id>
+      <latitude>36.58</latitude>
+      <longitude>-121.85</longitude>
+      <elevation_m>66.0</elevation_m>
+      <site>MONTEREY/WFO</site>
+      <state>CA</state>
+      <country>US</country>
+      <site_type>
+        <WFO_office />
       </site_type>
     </Station>
     <Station>
@@ -55564,6 +55722,18 @@
       <country>US</country>
     </Station>
     <Station>
+      <station_id>KOAR</station_id>
+      <latitude>36.67</latitude>
+      <longitude>-121.77</longitude>
+      <elevation_m>41.0</elevation_m>
+      <site>FORT ORD/FRITZSC</site>
+      <state>CA</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KOAX</station_id>
       <wmo_id>72558</wmo_id>
       <latitude>41.32</latitude>
@@ -55742,18 +55912,6 @@
       <site>MEDFORD(VOR)</site>
       <state>OR</state>
       <country>US</country>
-    </Station>
-    <Station>
-      <station_id>KOEL</station_id>
-      <latitude>39.12</latitude>
-      <longitude>-100.82</longitude>
-      <elevation_m>924.0</elevation_m>
-      <site>OAKLEY</site>
-      <state>KS</state>
-      <country>US</country>
-      <site_type>
-        <METAR />
-      </site_type>
     </Station>
     <Station>
       <station_id>KOEL</station_id>
@@ -57353,6 +57511,7 @@
     </Station>
     <Station>
       <station_id>KPDC</station_id>
+      <wmo_id>00003</wmo_id>
       <latitude>43.02</latitude>
       <longitude>-91.12</longitude>
       <elevation_m>201.0</elevation_m>
@@ -59669,6 +59828,9 @@
       <site>GRIFFISS AFB/88D</site>
       <state>NY</state>
       <country>US</country>
+      <site_type>
+        <NEXRAD />
+      </site_type>
     </Station>
     <Station>
       <station_id>KRMY</station_id>
@@ -62912,6 +63074,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KSZY</station_id>
+      <latitude>35.2</latitude>
+      <longitude>-88.5</longitude>
+      <elevation_m>184.0</elevation_m>
+      <site>SELMER</site>
+      <state>TN</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KT20</station_id>
       <latitude>29.52</latitude>
       <longitude>-97.47</longitude>
@@ -63037,6 +63211,18 @@
       <longitude>-98.92</longitude>
       <elevation_m>509.0</elevation_m>
       <site>FREDERICKSBURG</site>
+      <state>TX</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KT89</station_id>
+      <latitude>29.27</latitude>
+      <longitude>-103.68</longitude>
+      <elevation_m>801.0</elevation_m>
+      <site>LAJITAS</site>
       <state>TX</state>
       <country>US</country>
       <site_type>
@@ -63866,6 +64052,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KTQV</station_id>
+      <latitude>36.0</latitude>
+      <longitude>-78.93</longitude>
+      <elevation_m>230.0</elevation_m>
+      <site>DURHAM/DUKE</site>
+      <state>NC</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KTRB</station_id>
       <latitude>38.45</latitude>
       <longitude>-101.75</longitude>
@@ -64235,6 +64433,7 @@
     </Station>
     <Station>
       <station_id>KTWX</station_id>
+      <wmo_id>00001</wmo_id>
       <latitude>39.0</latitude>
       <longitude>-96.23</longitude>
       <elevation_m>417.0</elevation_m>
@@ -64688,7 +64887,6 @@
     </Station>
     <Station>
       <station_id>KUKL</station_id>
-      <wmo_id>00001</wmo_id>
       <latitude>38.3</latitude>
       <longitude>-95.73</longitude>
       <elevation_m>357.0</elevation_m>
@@ -64744,6 +64942,18 @@
       <site>MONETT</site>
       <state>MO</state>
       <country>US</country>
+    </Station>
+    <Station>
+      <station_id>KUMP</station_id>
+      <latitude>39.93</latitude>
+      <longitude>-86.05</longitude>
+      <elevation_m>247.0</elevation_m>
+      <site>INDIANAPOLIS MET</site>
+      <state>IN</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
     </Station>
     <Station>
       <station_id>KUNI</station_id>
@@ -65672,7 +65882,7 @@
       <latitude>38.27</latitude>
       <longitude>-87.72</longitude>
       <elevation_m>190.0</elevation_m>
-      <site>EVANSVILLE</site>
+      <site>EVANSVILLE(88D)</site>
       <state>IN</state>
       <country>US</country>
       <site_type>
@@ -66907,6 +67117,7 @@
       <site>GRAF IGNATIEVO</site>
       <country>BG</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -66917,6 +67128,9 @@
       <elevation_m>93.0</elevation_m>
       <site>DOLNA</site>
       <country>BG</country>
+      <site_type>
+        <METAR />
+      </site_type>
     </Station>
     <Station>
       <station_id>LBRS</station_id>
@@ -67210,6 +67424,7 @@
       <country>ES</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -75498,6 +75713,17 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>MHPR</station_id>
+      <latitude>14.38</latitude>
+      <longitude>-87.62</longitude>
+      <elevation_m>628.0</elevation_m>
+      <site>PALMEROLA</site>
+      <country>HO</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>MHRO</station_id>
       <wmo_id>78703</wmo_id>
       <latitude>16.32</latitude>
@@ -81008,6 +81234,17 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>OOAD</station_id>
+      <latitude>22.5</latitude>
+      <longitude>57.37</longitude>
+      <elevation_m>327.0</elevation_m>
+      <site>ADAM</site>
+      <country>OM</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>OOBR</station_id>
       <wmo_id>41244</wmo_id>
       <latitude>24.22</latitude>
@@ -81091,9 +81328,9 @@
     <Station>
       <station_id>OOKB</station_id>
       <wmo_id>41240</wmo_id>
-      <latitude>26.22</latitude>
-      <longitude>56.22</longitude>
-      <elevation_m>3.0</elevation_m>
+      <latitude>26.17</latitude>
+      <longitude>56.23</longitude>
+      <elevation_m>30.0</elevation_m>
       <site>KHASSAB (MIL)</site>
       <country>OM</country>
       <site_type>
@@ -82575,6 +82812,18 @@
       <country>US</country>
       <site_type>
         <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>PAEC</station_id>
+      <latitude>64.52</latitude>
+      <longitude>-165.3</longitude>
+      <elevation_m>16.0</elevation_m>
+      <site>NOME/88D/PAEC</site>
+      <state>AK</state>
+      <country>US</country>
+      <site_type>
+        <NEXRAD />
       </site_type>
     </Station>
     <Station>
@@ -86089,6 +86338,7 @@
     </Station>
     <Station>
       <station_id>RJCR</station_id>
+      <wmo_id>00005</wmo_id>
       <latitude>45.45</latitude>
       <longitude>141.02</longitude>
       <elevation_m>27.0</elevation_m>
@@ -88169,7 +88419,6 @@
     </Station>
     <Station>
       <station_id>RORY</station_id>
-      <wmo_id>00005</wmo_id>
       <latitude>27.05</latitude>
       <longitude>128.4</longitude>
       <elevation_m>13.0</elevation_m>
@@ -88885,6 +89134,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -89104,6 +89354,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -89214,6 +89465,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -89226,6 +89478,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -89250,6 +89503,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -89668,6 +89922,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -90033,6 +90288,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -90082,6 +90338,7 @@
       <country>AR</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -93859,6 +94116,7 @@
       <site>ALCANTARI</site>
       <country>BO</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -96511,6 +96769,7 @@
       <country>KZ</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -96698,6 +96957,7 @@
       <country>AZ</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -96917,6 +97177,7 @@
       <country>GE</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -96977,6 +97238,7 @@
       <country>GE</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -97833,6 +98095,17 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>UMIO</station_id>
+      <latitude>54.43</latitude>
+      <longitude>30.3</longitude>
+      <elevation_m>189.0</elevation_m>
+      <site>ORSHA</site>
+      <country>BY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>UMKK</station_id>
       <wmo_id>26702</wmo_id>
       <latitude>54.88</latitude>
@@ -98399,6 +98672,7 @@
       <country>RU</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -99499,10 +99773,9 @@
     </Station>
     <Station>
       <station_id>VAKE</station_id>
-      <wmo_id>42638</wmo_id>
       <latitude>23.13</latitude>
       <longitude>70.12</longitude>
-      <elevation_m>35.0</elevation_m>
+      <elevation_m>29.0</elevation_m>
       <site>KANDLA AERODROME</site>
       <country>IN</country>
       <site_type>
@@ -100322,6 +100595,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -100519,6 +100793,28 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VERU</station_id>
+      <latitude>26.13</latitude>
+      <longitude>89.92</longitude>
+      <elevation_m>45.0</elevation_m>
+      <site>RUPSI</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VETJ</station_id>
+      <latitude>27.93</latitude>
+      <longitude>96.13</longitude>
+      <elevation_m>244.0</elevation_m>
+      <site>TEZU</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -101581,6 +101877,7 @@
       <site>JINDAL VIJAYANAG</site>
       <country>IN</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -101592,7 +101889,19 @@
       <site>KANNUR</site>
       <country>IN</country>
       <site_type>
+        <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VOKU</station_id>
+      <latitude>15.72</latitude>
+      <longitude>78.17</longitude>
+      <elevation_m>280.0</elevation_m>
+      <site>KURNOOL</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -101726,6 +102035,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>

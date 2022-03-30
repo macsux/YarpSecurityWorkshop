@@ -1,14 +1,21 @@
+using System.Security.Claims;
+using Common;
 using Gateway;
+using IdentityModel;
 using IdentityServer4.Configuration;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using NMica.SecurityProxy.Middleware.Transforms;
 using Yarp.ReverseProxy.Transforms;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddYamlFile("appsettings.yaml");
 builder.Services.AddControllers();
+builder.Services.AddSingleton<IClaimsTransformation, ClaimsTransformer>();
 builder.Services.AddAuthentication(opt =>
     {
         opt.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -21,12 +28,18 @@ builder.Services.AddAuthentication(opt =>
         config.ClientId = "gui";
         config.ClientSecret = "password";
         config.ResponseType = "code";
-        // config.UsePkce = true;
-        config.SaveTokens = true;
-        // config.Scope.Add("app1");
         config.Scope.Add("openid");
         config.Scope.Add("profile");
-        
+        config.ClaimActions.Add(new DeleteClaimAction("s_hash"));
+        config.ClaimActions.Add(new DeleteClaimAction("sid"));
+        config.ClaimActions.Add(new DeleteClaimAction("auth_time"));
+        config.ClaimActions.Add(new DeleteClaimAction("amr"));
+        config.Events.OnTokenValidated += context =>
+        {
+            var logger = context.Request.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>().CreateLogger("TokenValidation");
+            logger.LogInformation("Upstream token: {Token}", context.SecurityToken.RawData);
+            return Task.CompletedTask;
+        };
     })
     .AddCookie(x => x.LoginPath = "/login");
 builder.Services.AddAuthorization(c => c
@@ -40,6 +53,8 @@ builder.Services.AddReverseProxy()
     });
 
 var services = builder.Services;
+
+// configure identity server helper methods to allow issuing JWT tokens from ClaimPrincipal and publish signing key via OIDC discovery endpoint
 services.AddSingleton<ISigningCredentialStore, SigningKeyCredentialsProvider>();
 services.AddSingleton<IValidationKeysStore, SigningKeyCredentialsProvider>();
 services.AddIdentityServerBuilder()
@@ -86,7 +101,12 @@ services.Configure<IdentityServerOptions>(opt =>
 });
 
 var app = builder.Build();
-app.UseCors(p => p.AllowAnyHeader().WithOrigins("https://localhost:8080").AllowAnyMethod().AllowCredentials());
+
+app.UseCors(p => p
+    .AllowAnyHeader()
+    .WithOrigins("https://localhost:8080")
+    .AllowAnyMethod()
+    .AllowCredentials());
 
 app.UseIdentityServer();
 app.UseRouting();

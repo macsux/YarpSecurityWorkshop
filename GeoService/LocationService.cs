@@ -19,6 +19,7 @@ public class LocationService : BackgroundService
     {
         _logger = logger;
         _httpClient = clientFactory.CreateClient("WeatherService");
+        _stations = _gf.CreateMultiPoint();
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -32,7 +33,7 @@ public class LocationService : BackgroundService
             return point;
         }).ToArray();
         _stations = _gf.CreateMultiPoint(stationPoints);
-        _logger.LogInformation($"Loaded {stationsList.Count} stations");
+        _logger.LogInformation("Loaded {StationCount} stations", stationsList.Count);
         _initialized.TrySetResult();
     }
 

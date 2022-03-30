@@ -1,23 +1,33 @@
 ﻿using System.Drawing;
 using System.IO.Compression;
+using System.Security.Claims;
+using System.Security.Principal;
 using System.Xml;
 using System.Xml.Serialization;
 using Common;
 using MetarParserCore;
+using MetarParserCore.Enums;
 using MetarParserCore.Objects;
+using Microsoft.AspNetCore.Authorization;
 using NMica.Utils.Collections;
 
 namespace WeatherService;
 
 public class MetarService : DataFeedService
 {
+    
+    private readonly IHttpContextAccessor _context;
     private const string MetarDownload = "https://aviationweather.gov/adds/dataserver_current/current/metars.cache.xml.gz";
     private Dictionary<string, Metar> _metars = new();
 
-    public MetarService(ILogger<MetarService> logger) : base(logger)
-    {
-    }
+    private ClaimsPrincipal User => _context.HttpContext?.User ?? new ClaimsPrincipal();
 
+    public MetarService(ILogger<MetarService> logger, IHttpContextAccessor context) : base(logger)
+    {
+        _context = context;
+    }
+    
+   
     public async Task<Metar?> GetMetar(string stationId)
     {
         await Initialized.Task;
