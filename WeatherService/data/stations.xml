@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://www.aviationweather.gov/static/adds/schema/station1_0.xsd">
-  <request_index>86616562</request_index>
+  <request_index>94944865</request_index>
   <data_source name="stations" />
   <request type="retrieve" />
   <errors />
   <warnings />
-  <time_taken_ms>111</time_taken_ms>
+  <time_taken_ms>85</time_taken_ms>
   <data num_results="8759">
     <Station>
       <station_id>AGGA</station_id>

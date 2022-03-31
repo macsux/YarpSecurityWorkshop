@@ -4,7 +4,7 @@ using MetarParserCore.Enums;
 using MetarParserCore.Objects;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+using static MetarParserCore.Enums.WeatherCondition;
 namespace WeatherService.Controllers;
 
 [ApiController]
@@ -33,6 +33,26 @@ public class WeatherForecastController : ControllerBase
             StationId = metar.Airport,
             TempC = metar.Temperature.Value,
         };
+        var conditions = metar.PresentWeather?.SelectMany(x => x.WeatherConditions).Distinct().ToHashSet() ?? new();
+        if (conditions.Contains(Thunderstorm))
+        {
+            report.Condition = "Thunderstorm";
+        }
+        else if (conditions.Contains(Rain))
+        {
+            report.Condition = "Raining";
+        }
+        else if (conditions.Contains(Hail))
+        {
+            report.Condition = "Hail";
+        }
+        else if (conditions.Overlaps(new[]{Snow, SnowGrains, SnowPellets}))
+        {
+            report.Condition = "Snowing";
+        }
+        
+
+        
         // selectively include extra data based on user's role
         if (User.HasClaim(ClaimTypes.Role, "premium"))
         {

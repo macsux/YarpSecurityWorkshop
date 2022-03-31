@@ -9,12 +9,10 @@ namespace NMica.SecurityProxy.Middleware.Transforms;
 public class JwtPrincipalAppender : RequestTransform
 {
     private readonly IdentityServerTools _identityServerTools;
-    private readonly IHttpContextAccessor _contextAccessor;
 
-    public JwtPrincipalAppender(IdentityServerTools identityServerTools, IHttpContextAccessor contextAccessor)
+    public JwtPrincipalAppender(IdentityServerTools identityServerTools)
     {
         _identityServerTools = identityServerTools;
-        _contextAccessor = contextAccessor;
     }
 
     public override async ValueTask ApplyAsync(RequestTransformContext context)

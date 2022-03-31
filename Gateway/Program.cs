@@ -50,14 +50,15 @@ builder.Services.AddReverseProxy()
     .AddTransforms(context =>
     {
         context.RequestTransforms.Add(context.Services.GetRequiredService<JwtPrincipalAppender>());
+        context.RequestTransforms.Add(new RequestHeaderRemoveTransform("Cookie"));
+
     });
 
-var services = builder.Services;
 
 // configure identity server helper methods to allow issuing JWT tokens from ClaimPrincipal and publish signing key via OIDC discovery endpoint
-services.AddSingleton<ISigningCredentialStore, SigningKeyCredentialsProvider>();
-services.AddSingleton<IValidationKeysStore, SigningKeyCredentialsProvider>();
-services.AddIdentityServerBuilder()
+builder.Services.AddSingleton<ISigningCredentialStore, SigningKeyCredentialsProvider>();
+builder.Services.AddSingleton<IValidationKeysStore, SigningKeyCredentialsProvider>();
+builder.Services.AddIdentityServerBuilder()
     .AddRequiredPlatformServices()
     .AddCoreServices()
     .AddDefaultEndpoints()
@@ -73,7 +74,7 @@ services.AddIdentityServerBuilder()
     .AddInMemoryApiResources(Enumerable.Empty<ApiResource>())
     .AddInMemoryApiScopes(Enumerable.Empty<ApiScope>());
             
-services.Configure<IdentityServerOptions>(opt =>
+builder.Services.Configure<IdentityServerOptions>(opt =>
 {
     opt.Endpoints = new EndpointsOptions()
     {

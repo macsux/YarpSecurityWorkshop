@@ -32,10 +32,18 @@ else
               <p id="tempDescription"></p>
             </div>
             <p style="font-size: 1.5rem;"><a href="#" class="@(ConvertToF ? "" : "active")" id="celcius" @onclick="SetUnitC">°C</a> | <a href="#" id="farenheit" class="@(ConvertToF ? "active" : "")" @onclick="SetUnitF">°F</a></p>
+
           </div>
         </div>
+        
 
         <div class="col-xs-12 col-sm-12 col-md-3 row overflow-hidden" style="text-align: right;">
+          @if (WeatherReport.Condition != null)
+          {
+            <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+              <h6><spam id="condition">@WeatherReport.Condition</spam></h6>
+            </div>
+          }
           <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
             <h6>Humidity: <spam id="humidity">@WeatherReport.RelativeHumidity</spam>%</h6>
           </div>
