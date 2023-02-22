@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://www.aviationweather.gov/static/adds/schema/station1_0.xsd">
-  <request_index>94944865</request_index>
+  <request_index>653629949</request_index>
   <data_source name="stations" />
   <request type="retrieve" />
   <errors />
   <warnings />
-  <time_taken_ms>85</time_taken_ms>
-  <data num_results="8759">
+  <time_taken_ms>113</time_taken_ms>
+  <data num_results="8805">
     <Station>
       <station_id>AGGA</station_id>
       <latitude>-8.7</latitude>
@@ -11710,7 +11710,7 @@
       <station_id>DAAT</station_id>
       <latitude>22.82</latitude>
       <longitude>5.47</longitude>
-      <elevation_m>1372.0</elevation_m>
+      <elevation_m>1376.0</elevation_m>
       <site>TAMANRASSET/AGUE</site>
       <country>DZ</country>
       <site_type>
@@ -11773,7 +11773,7 @@
       <wmo_id>60419</wmo_id>
       <latitude>36.27</latitude>
       <longitude>6.62</longitude>
-      <elevation_m>700.0</elevation_m>
+      <elevation_m>686.0</elevation_m>
       <site>CONSTANTINE/EL B</site>
       <country>DZ</country>
       <site_type>
@@ -11883,7 +11883,7 @@
       <wmo_id>60511</wmo_id>
       <latitude>35.33</latitude>
       <longitude>1.47</longitude>
-      <elevation_m>984.0</elevation_m>
+      <elevation_m>976.0</elevation_m>
       <site>TIARET</site>
       <country>DZ</country>
       <site_type>
@@ -12482,6 +12482,7 @@
       <country>GH</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -17605,7 +17606,6 @@
     </Station>
     <Station>
       <station_id>ENAS</station_id>
-      <wmo_id>00004</wmo_id>
       <latitude>78.92</latitude>
       <longitude>11.92</longitude>
       <elevation_m>8.0</elevation_m>
@@ -17710,6 +17710,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -17947,6 +17948,7 @@
       <country>SJ</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -18023,6 +18025,7 @@
     </Station>
     <Station>
       <station_id>ENLE</station_id>
+      <wmo_id>00004</wmo_id>
       <latitude>56.53</latitude>
       <longitude>3.22</longitude>
       <elevation_m>10.0</elevation_m>
@@ -18090,6 +18093,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -18184,6 +18188,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -18299,6 +18304,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -18355,6 +18361,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -18402,6 +18409,7 @@
       <country>NO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -19018,6 +19026,31 @@
       <country>GR</country>
       <site_type>
         <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>EQYR</station_id>
+      <latitude>36.63</latitude>
+      <longitude>-6.33</longitude>
+      <elevation_m>26.0</elevation_m>
+      <site>ROTA NAVAL STATI</site>
+      <country>ES</country>
+      <site_type>
+        <METAR />
+        <rawinsonde />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>EQYS</station_id>
+      <latitude>37.4</latitude>
+      <longitude>14.92</longitude>
+      <elevation_m>25.0</elevation_m>
+      <site>SIGONELLA (NAS)</site>
+      <country>IT</country>
+      <site_type>
+        <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -27355,9 +27388,9 @@
     <Station>
       <station_id>GUNZ</station_id>
       <wmo_id>61849</wmo_id>
-      <latitude>7.72</latitude>
-      <longitude>-8.82</longitude>
-      <elevation_m>470.0</elevation_m>
+      <latitude>7.8</latitude>
+      <longitude>-8.7</longitude>
+      <elevation_m>500.0</elevation_m>
       <site>N'ZEREKORE/KONIA</site>
       <country>GN</country>
       <site_type>
@@ -28995,8 +29028,8 @@
       <station_id>HSDN</station_id>
       <wmo_id>62650</wmo_id>
       <latitude>19.17</latitude>
-      <longitude>30.47</longitude>
-      <elevation_m>226.0</elevation_m>
+      <longitude>30.42</longitude>
+      <elevation_m>235.0</elevation_m>
       <site>DONGOLA/DUNQULAH</site>
       <country>SD</country>
       <site_type>
@@ -29020,7 +29053,7 @@
       <wmo_id>62760</wmo_id>
       <latitude>13.62</latitude>
       <longitude>25.32</longitude>
-      <elevation_m>730.0</elevation_m>
+      <elevation_m>734.0</elevation_m>
       <site>EL FASHER</site>
       <country>SD</country>
       <site_type>
@@ -29138,8 +29171,8 @@
       <station_id>HSNL</station_id>
       <wmo_id>62790</wmo_id>
       <latitude>12.05</latitude>
-      <longitude>24.87</longitude>
-      <elevation_m>658.0</elevation_m>
+      <longitude>24.82</longitude>
+      <elevation_m>643.0</elevation_m>
       <site>NYALA</site>
       <country>SD</country>
       <site_type>
@@ -29390,6 +29423,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>HTGW</station_id>
+      <latitude>-8.92</latitude>
+      <longitude>33.27</longitude>
+      <elevation_m>1345.0</elevation_m>
+      <site>SONGWE</site>
+      <country>TZ</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -29904,6 +29948,7 @@
     </Station>
     <Station>
       <station_id>K0A0</station_id>
+      <wmo_id>00002</wmo_id>
       <latitude>32.98</latitude>
       <longitude>-106.97</longitude>
       <elevation_m>1401.0</elevation_m>
@@ -30072,6 +30117,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>K10G</station_id>
+      <latitude>40.53</latitude>
+      <longitude>-81.95</longitude>
+      <elevation_m>371.0</elevation_m>
+      <site>MILLERSBURG</site>
+      <state>OH</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>K11R</station_id>
       <latitude>30.22</latitude>
       <longitude>-96.37</longitude>
@@ -30114,6 +30171,18 @@
       <elevation_m>404.0</elevation_m>
       <site>LONG PRAIRIE</site>
       <state>MN</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K15M</station_id>
+      <latitude>34.77</latitude>
+      <longitude>-88.17</longitude>
+      <elevation_m>192.0</elevation_m>
+      <site>IUKA</site>
+      <state>MS</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -30327,7 +30396,7 @@
       <station_id>K1D1</station_id>
       <latitude>45.23</latitude>
       <longitude>-96.57</longitude>
-      <elevation_m>341.0</elevation_m>
+      <elevation_m>340.0</elevation_m>
       <site>MILLBANK</site>
       <state>SD</state>
       <country>US</country>
@@ -31128,6 +31197,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>K2G2</station_id>
+      <latitude>40.37</latitude>
+      <longitude>-80.7</longitude>
+      <elevation_m>365.0</elevation_m>
+      <site>STEUBENVILLE</site>
+      <state>OH</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>K2G4</station_id>
       <latitude>39.58</latitude>
       <longitude>-79.33</longitude>
@@ -31386,6 +31467,18 @@
       <elevation_m>186.0</elevation_m>
       <site>UNION</site>
       <state>SC</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K36K</station_id>
+      <latitude>37.97</latitude>
+      <longitude>-101.25</longitude>
+      <elevation_m>938.0</elevation_m>
+      <site>LAKIN</site>
+      <state>KS</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -31771,6 +31864,18 @@
       <elevation_m>12.0</elevation_m>
       <site>PERRY FOLEY</site>
       <state>FL</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>K40U</station_id>
+      <latitude>40.98</latitude>
+      <longitude>-109.68</longitude>
+      <elevation_m>1882.0</elevation_m>
+      <site>MANILA</site>
+      <state>UT</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -33828,6 +33933,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KAGO</station_id>
+      <latitude>33.23</latitude>
+      <longitude>-93.22</longitude>
+      <elevation_m>91.0</elevation_m>
+      <site>MAGNOLIA</site>
+      <state>AR</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KAGS</station_id>
       <wmo_id>72218</wmo_id>
       <latitude>33.37</latitude>
@@ -34879,6 +34996,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KATA</station_id>
+      <latitude>33.1</latitude>
+      <longitude>-94.2</longitude>
+      <elevation_m>85.0</elevation_m>
+      <site>ATLANTA</site>
+      <state>TX</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KATL</station_id>
       <wmo_id>72219</wmo_id>
       <latitude>33.63</latitude>
@@ -35374,7 +35503,6 @@
     </Station>
     <Station>
       <station_id>KB23</station_id>
-      <wmo_id>00002</wmo_id>
       <latitude>40.6</latitude>
       <longitude>-116.87</longitude>
       <elevation_m>1381.0</elevation_m>
@@ -37904,9 +38032,9 @@
     </Station>
     <Station>
       <station_id>KCDJ</station_id>
-      <latitude>39.77</latitude>
-      <longitude>-93.48</longitude>
-      <elevation_m>236.0</elevation_m>
+      <latitude>39.82</latitude>
+      <longitude>-93.57</longitude>
+      <elevation_m>234.0</elevation_m>
       <site>CHILLICOTHE</site>
       <state>MO</state>
       <country>US</country>
@@ -38391,6 +38519,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -44211,7 +44340,7 @@
       <station_id>KFSK</station_id>
       <latitude>37.8</latitude>
       <longitude>-94.77</longitude>
-      <elevation_m>280.0</elevation_m>
+      <elevation_m>276.0</elevation_m>
       <site>FORT SCOTT</site>
       <state>KS</state>
       <country>US</country>
@@ -44776,6 +44905,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KGDA</station_id>
+      <latitude>37.33</latitude>
+      <longitude>-88.1</longitude>
+      <elevation_m>199.0</elevation_m>
+      <site>MARION</site>
+      <state>KY</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KGDB</station_id>
       <latitude>44.75</latitude>
       <longitude>-95.55</longitude>
@@ -44945,6 +45086,18 @@
       <elevation_m>9.0</elevation_m>
       <site>GEORGETOWN</site>
       <state>SC</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KGGF</station_id>
+      <latitude>40.87</latitude>
+      <longitude>-101.73</longitude>
+      <elevation_m>1044.0</elevation_m>
+      <site>GRANT</site>
+      <state>NE</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -45237,6 +45390,18 @@
       <elevation_m>216.0</elevation_m>
       <site>GLASGOW</site>
       <state>KY</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KGLX</station_id>
+      <latitude>28.23</latitude>
+      <longitude>-88.98</longitude>
+      <elevation_m>32.0</elevation_m>
+      <site>MISS CANYON 724</site>
+      <state>LA</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -45937,11 +46102,11 @@
     </Station>
     <Station>
       <station_id>KGVW</station_id>
-      <latitude>38.83</latitude>
-      <longitude>-94.57</longitude>
-      <elevation_m>337.0</elevation_m>
-      <site>GRANDVIEW</site>
-      <state>MO</state>
+      <latitude>29.13</latitude>
+      <longitude>-94.55</longitude>
+      <elevation_m>37.0</elevation_m>
+      <site>GALVESTON 209B</site>
+      <state>TX</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -46507,6 +46672,18 @@
       <elevation_m>703.0</elevation_m>
       <site>HOLDREGE/BREWSTR</site>
       <state>NE</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KHDL</station_id>
+      <latitude>31.37</latitude>
+      <longitude>-85.32</longitude>
+      <elevation_m>109.0</elevation_m>
+      <site>HEADLAND</site>
+      <state>AL</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -49501,6 +49678,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -49638,6 +49816,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KJPX</station_id>
+      <latitude>40.95</latitude>
+      <longitude>-72.25</longitude>
+      <elevation_m>10.0</elevation_m>
+      <site>EAST HAMPTON</site>
+      <state>NY</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KJQF</station_id>
       <latitude>35.38</latitude>
       <longitude>-80.72</longitude>
@@ -49656,6 +49846,18 @@
       <elevation_m>2.0</elevation_m>
       <site>MANHATTAN/DWNTWN</site>
       <state>NY</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KJRO</station_id>
+      <latitude>38.98</latitude>
+      <longitude>-82.58</longitude>
+      <elevation_m>224.0</elevation_m>
+      <site>JACKSON</site>
+      <state>OH</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -49960,6 +50162,18 @@
       <elevation_m>301.0</elevation_m>
       <site>GARNETT</site>
       <state>KS</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KK70</station_id>
+      <latitude>25.32</latitude>
+      <longitude>-80.28</longitude>
+      <elevation_m>20.0</elevation_m>
+      <site>KEY LARGO      _</site>
+      <state>FL</state>
       <country>US</country>
       <site_type>
         <METAR />
@@ -51515,6 +51729,7 @@
     </Station>
     <Station>
       <station_id>KLUM</station_id>
+      <wmo_id>00003</wmo_id>
       <latitude>44.9</latitude>
       <longitude>-91.87</longitude>
       <elevation_m>271.0</elevation_m>
@@ -51892,7 +52107,7 @@
       <station_id>KM01</station_id>
       <latitude>35.2</latitude>
       <longitude>-90.05</longitude>
-      <elevation_m>69.0</elevation_m>
+      <elevation_m>68.0</elevation_m>
       <site>DEWITT SPAIN/MEM</site>
       <state>TN</state>
       <country>US</country>
@@ -53687,7 +53902,7 @@
       <station_id>KMPR</station_id>
       <latitude>38.35</latitude>
       <longitude>-97.68</longitude>
-      <elevation_m>457.0</elevation_m>
+      <elevation_m>455.0</elevation_m>
       <site>MCPHERSON</site>
       <state>KS</state>
       <country>US</country>
@@ -57162,6 +57377,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KP52</station_id>
+      <latitude>34.73</latitude>
+      <longitude>-112.03</longitude>
+      <elevation_m>1085.0</elevation_m>
+      <site>COTTONWOOD</site>
+      <state>AZ</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KP53</station_id>
       <latitude>46.42</latitude>
       <longitude>-86.65</longitude>
@@ -57511,7 +57738,6 @@
     </Station>
     <Station>
       <station_id>KPDC</station_id>
-      <wmo_id>00003</wmo_id>
       <latitude>43.02</latitude>
       <longitude>-91.12</longitude>
       <elevation_m>201.0</elevation_m>
@@ -60658,6 +60884,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KS24</station_id>
+      <latitude>41.3</latitude>
+      <longitude>-83.03</longitude>
+      <elevation_m>203.0</elevation_m>
+      <site>FREMONT</site>
+      <state>OH</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KS25</station_id>
       <latitude>47.8</latitude>
       <longitude>-103.25</longitude>
@@ -63326,6 +63564,7 @@
       <country>US</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -64201,6 +64440,7 @@
     </Station>
     <Station>
       <station_id>KTTH</station_id>
+      <wmo_id>00001</wmo_id>
       <latitude>39.48</latitude>
       <longitude>-87.25</longitude>
       <elevation_m>179.0</elevation_m>
@@ -64433,7 +64673,6 @@
     </Station>
     <Station>
       <station_id>KTWX</station_id>
-      <wmo_id>00001</wmo_id>
       <latitude>39.0</latitude>
       <longitude>-96.23</longitude>
       <elevation_m>417.0</elevation_m>
@@ -65971,6 +66210,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>KW40</station_id>
+      <latitude>35.22</latitude>
+      <longitude>-78.03</longitude>
+      <elevation_m>50.0</elevation_m>
+      <site>MT OLIVE</site>
+      <state>NC</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KW43</station_id>
       <latitude>44.67</latitude>
       <longitude>-104.57</longitude>
@@ -66888,6 +67139,18 @@
       <country>US</country>
     </Station>
     <Station>
+      <station_id>KZER</station_id>
+      <latitude>40.7</latitude>
+      <longitude>-76.37</longitude>
+      <elevation_m>518.0</elevation_m>
+      <site>POTTSVILLE</site>
+      <state>PA</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>KZFW</station_id>
       <latitude>32.83</latitude>
       <longitude>-97.07</longitude>
@@ -67042,6 +67305,19 @@
       <site>ZANESVILLE</site>
       <state>OH</state>
       <country>US</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>LAKU</station_id>
+      <wmo_id>13610</wmo_id>
+      <latitude>42.03</latitude>
+      <longitude>20.42</longitude>
+      <elevation_m>354.0</elevation_m>
+      <site>KUKES</site>
+      <country>AL</country>
       <site_type>
         <METAR />
         <TAF />
@@ -68182,9 +68458,9 @@
     <Station>
       <station_id>LFBF</station_id>
       <wmo_id>07631</wmo_id>
-      <latitude>43.52</latitude>
+      <latitude>43.53</latitude>
       <longitude>1.37</longitude>
-      <elevation_m>166.0</elevation_m>
+      <elevation_m>159.0</elevation_m>
       <site>TOULOUSE/FRANCAZ</site>
       <country>FR</country>
       <site_type>
@@ -68668,6 +68944,17 @@
       <longitude>2.37</longitude>
       <elevation_m>159.0</elevation_m>
       <site>BOURGES (AUT)</site>
+      <country>FR</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>LFLH</station_id>
+      <latitude>46.83</latitude>
+      <longitude>4.82</longitude>
+      <elevation_m>190.0</elevation_m>
+      <site>CHALON CHAMPFORG</site>
       <country>FR</country>
       <site_type>
         <METAR />
@@ -74761,6 +75048,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>LTFB</station_id>
+      <latitude>37.95</latitude>
+      <longitude>27.33</longitude>
+      <elevation_m>3.0</elevation_m>
+      <site>IZMIR-SELCUK/EFE</site>
+      <country>TR</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>LTFC</station_id>
       <wmo_id>17241</wmo_id>
       <latitude>37.87</latitude>
@@ -74851,6 +75150,18 @@
       <longitude>28.75</longitude>
       <elevation_m>99.0</elevation_m>
       <site>ISTANBUL HANALI</site>
+      <country>TR</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>LTFO</station_id>
+      <latitude>41.18</latitude>
+      <longitude>40.85</longitude>
+      <elevation_m>5.0</elevation_m>
+      <site>RIZE-ARTVIN</site>
       <country>TR</country>
       <site_type>
         <METAR />
@@ -75721,6 +76032,7 @@
       <country>HO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -76539,6 +76851,7 @@
       <country>MX</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -81971,7 +82284,7 @@
       <wmo_id>40616</wmo_id>
       <latitude>36.23</latitude>
       <longitude>43.97</longitude>
-      <elevation_m>397.0</elevation_m>
+      <elevation_m>399.0</elevation_m>
       <site>ERBIL INTL</site>
       <country>IQ</country>
       <site_type>
@@ -86338,7 +86651,6 @@
     </Station>
     <Station>
       <station_id>RJCR</station_id>
-      <wmo_id>00005</wmo_id>
       <latitude>45.45</latitude>
       <longitude>141.02</longitude>
       <elevation_m>27.0</elevation_m>
@@ -88316,9 +88628,9 @@
     <Station>
       <station_id>ROIG</station_id>
       <wmo_id>47918</wmo_id>
-      <latitude>24.33</latitude>
-      <longitude>124.18</longitude>
-      <elevation_m>26.0</elevation_m>
+      <latitude>24.38</latitude>
+      <longitude>124.23</longitude>
+      <elevation_m>37.0</elevation_m>
       <site>ISHIGAKIJIMA ISL</site>
       <country>JP</country>
       <site_type>
@@ -89965,7 +90277,7 @@
       <wmo_id>87828</wmo_id>
       <latitude>-43.2</latitude>
       <longitude>-65.27</longitude>
-      <elevation_m>43.0</elevation_m>
+      <elevation_m>37.0</elevation_m>
       <site>TRELEW/ALMIRANTE</site>
       <country>AR</country>
       <site_type>
@@ -90004,6 +90316,17 @@
       <longitude>-72.28</longitude>
       <elevation_m>220.0</elevation_m>
       <site>LAGO ARGENTINO A</site>
+      <country>AR</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SAWC</station_id>
+      <latitude>-50.28</latitude>
+      <longitude>-72.05</longitude>
+      <elevation_m>204.0</elevation_m>
+      <site>El CALAFATE</site>
       <country>AR</country>
       <site_type>
         <METAR />
@@ -90148,8 +90471,8 @@
       <wmo_id>87750</wmo_id>
       <latitude>-38.72</latitude>
       <longitude>-62.17</longitude>
-      <elevation_m>83.0</elevation_m>
-      <site>BAHIA BLANCA (MI</site>
+      <elevation_m>77.0</elevation_m>
+      <site>BAHIA BLANCA</site>
       <country>AR</country>
       <site_type>
         <METAR />
@@ -93094,6 +93417,17 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>SEGZ</station_id>
+      <latitude>-3.42</latitude>
+      <longitude>-78.57</longitude>
+      <elevation_m>805.0</elevation_m>
+      <site>GUALAQUIZA</site>
+      <country>EC</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>SEIB</station_id>
       <wmo_id>84043</wmo_id>
       <latitude>0.35</latitude>
@@ -93478,6 +93812,28 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>SGGR</station_id>
+      <latitude>-24.03</latitude>
+      <longitude>-54.35</longitude>
+      <elevation_m>297.0</elevation_m>
+      <site>SALTO DEL GUAIRA</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SGLV</station_id>
+      <latitude>-22.28</latitude>
+      <longitude>-57.93</longitude>
+      <elevation_m>78.0</elevation_m>
+      <site>PUERTO CASADO</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>SGME</station_id>
       <wmo_id>86068</wmo_id>
       <latitude>-22.03</latitude>
@@ -93502,12 +93858,67 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>SGPC</station_id>
+      <latitude>-23.5</latitude>
+      <longitude>-58.78</longitude>
+      <elevation_m>98.0</elevation_m>
+      <site>POZO COLORADO</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>SGPI</station_id>
       <wmo_id>86255</wmo_id>
       <latitude>-26.87</latitude>
       <longitude>-58.32</longitude>
       <elevation_m>59.0</elevation_m>
       <site>PILAR</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SGPJ</station_id>
+      <latitude>-22.63</latitude>
+      <longitude>-55.83</longitude>
+      <elevation_m>571.0</elevation_m>
+      <site>CABALLERO</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SGSJ</station_id>
+      <latitude>-26.67</latitude>
+      <longitude>-57.13</longitude>
+      <elevation_m>131.0</elevation_m>
+      <site>SAN JUAN BATISTA</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SGSP</station_id>
+      <latitude>-24.03</latitude>
+      <longitude>-57.02</longitude>
+      <elevation_m>81.0</elevation_m>
+      <site>SAN PEDRO</site>
+      <country>PY</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>SGVR</station_id>
+      <latitude>-25.75</latitude>
+      <longitude>-56.43</longitude>
+      <elevation_m>161.0</elevation_m>
+      <site>VILLARRRICA</site>
       <country>PY</country>
       <site_type>
         <METAR />
@@ -93975,6 +94386,7 @@
       <country>CO</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -94260,7 +94672,7 @@
       <wmo_id>85195</wmo_id>
       <latitude>-16.27</latitude>
       <longitude>-62.47</longitude>
-      <elevation_m>520.0</elevation_m>
+      <elevation_m>539.0</elevation_m>
       <site>SAN JAVIER</site>
       <country>BO</country>
       <site_type>
@@ -95733,6 +96145,7 @@
       <country>VE</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -97021,6 +97434,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>UBBZ</station_id>
+      <latitude>39.1</latitude>
+      <longitude>46.73</longitude>
+      <elevation_m>489.0</elevation_m>
+      <site>ZANGILAN</site>
+      <country>AZ</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>UBEE</station_id>
       <latitude>40.63</latitude>
       <longitude>47.13</longitude>
@@ -98103,6 +98528,7 @@
       <country>BY</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -98665,7 +99091,7 @@
     </Station>
     <Station>
       <station_id>USDA</station_id>
-      <latitude>71.23</latitude>
+      <latitude>71.2</latitude>
       <longitude>72.05</longitude>
       <elevation_m>5.0</elevation_m>
       <site>SABETTE</site>
@@ -99492,6 +99918,7 @@
       <country>RU</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -99625,7 +100052,7 @@
       <wmo_id>42634</wmo_id>
       <latitude>23.28</latitude>
       <longitude>69.67</longitude>
-      <elevation_m>80.0</elevation_m>
+      <elevation_m>79.0</elevation_m>
       <site>BHUJ-RUDRAMATA(A</site>
       <country>IN</country>
       <site_type>
@@ -99794,6 +100221,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VAKS</station_id>
+      <latitude>21.32</latitude>
+      <longitude>70.32</longitude>
+      <elevation_m>51.0</elevation_m>
+      <site>KESHOD</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -100510,6 +100948,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>VEDO</station_id>
+      <latitude>24.45</latitude>
+      <longitude>86.7</longitude>
+      <elevation_m>244.0</elevation_m>
+      <site>DEOGHAR</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>VEDZ</station_id>
       <latitude>27.98</latitude>
       <longitude>94.22</longitude>
@@ -100624,11 +101074,35 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>VEKI</station_id>
+      <latitude>26.78</latitude>
+      <longitude>83.88</longitude>
+      <elevation_m>81.0</elevation_m>
+      <site>KUSHINAGAR</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>VEKO</station_id>
       <latitude>24.82</latitude>
       <longitude>79.92</longitude>
       <elevation_m>222.0</elevation_m>
       <site>KHAJURAHO</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VEKU</station_id>
+      <latitude>24.92</latitude>
+      <longitude>92.98</longitude>
+      <elevation_m>107.0</elevation_m>
+      <site>SILCHAR_KUMBHIGR</site>
       <country>IN</country>
       <site_type>
         <METAR />
@@ -100804,6 +101278,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -100815,6 +101290,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101084,18 +101560,20 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
       <station_id>VIBY</station_id>
       <wmo_id>42189</wmo_id>
-      <latitude>28.37</latitude>
-      <longitude>79.4</longitude>
-      <elevation_m>173.0</elevation_m>
+      <latitude>28.42</latitude>
+      <longitude>79.45</longitude>
+      <elevation_m>175.0</elevation_m>
       <site>BAREILLY (IN-AFB</site>
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101121,6 +101599,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101235,6 +101714,18 @@
       </site_type>
     </Station>
     <Station>
+      <station_id>VIJR</station_id>
+      <latitude>26.88</latitude>
+      <longitude>70.87</longitude>
+      <elevation_m>229.0</elevation_m>
+      <site>JAISALMER</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
       <station_id>VIJU</station_id>
       <wmo_id>42056</wmo_id>
       <latitude>32.68</latitude>
@@ -101331,6 +101822,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101339,6 +101831,18 @@
       <longitude>77.07</longitude>
       <elevation_m>1537.0</elevation_m>
       <site>SHIMLA</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VISP</station_id>
+      <latitude>30.0</latitude>
+      <longitude>77.42</longitude>
+      <elevation_m>272.0</elevation_m>
+      <site>SAHARANPUR SARSA</site>
       <country>IN</country>
       <site_type>
         <METAR />
@@ -101379,6 +101883,18 @@
       <country>IN</country>
       <site_type>
         <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VIUT</station_id>
+      <latitude>25.82</latitude>
+      <longitude>71.48</longitude>
+      <elevation_m>152.0</elevation_m>
+      <site>UTTARLAI</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101668,6 +102184,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -101729,6 +102246,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VOBX</station_id>
+      <latitude>7.02</latitude>
+      <longitude>93.92</longitude>
+      <elevation_m>1.0</elevation_m>
+      <site>CAMPBELL BAY</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -101806,6 +102334,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>VODX</station_id>
+      <latitude>13.23</latitude>
+      <longitude>93.05</longitude>
+      <elevation_m>1.0</elevation_m>
+      <site>SHIBPUR(NAS)</site>
+      <country>IN</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -101902,6 +102441,7 @@
       <country>IN</country>
       <site_type>
         <METAR />
+        <TAF />
       </site_type>
     </Station>
     <Station>
@@ -102138,10 +102678,11 @@
       <station_id>VRMG</station_id>
       <latitude>-0.7</latitude>
       <longitude>73.15</longitude>
-      <elevation_m>3.0</elevation_m>
+      <elevation_m>2.0</elevation_m>
       <site>GAN INTL AIRPORT</site>
       <country>MV</country>
       <site_type>
+        <METAR />
         <TAF />
       </site_type>
     </Station>
@@ -102902,7 +103443,7 @@
       <wmo_id>48407</wmo_id>
       <latitude>15.25</latitude>
       <longitude>104.87</longitude>
-      <elevation_m>123.0</elevation_m>
+      <elevation_m>119.0</elevation_m>
       <site>UBON/RATCHATHANI</site>
       <country>TH</country>
       <site_type>
@@ -103519,10 +104060,9 @@
     </Station>
     <Station>
       <station_id>WAMN</station_id>
-      <wmo_id>97004</wmo_id>
-      <latitude>4.22</latitude>
-      <longitude>126.7</longitude>
-      <elevation_m>9.0</elevation_m>
+      <latitude>4.0</latitude>
+      <longitude>126.67</longitude>
+      <elevation_m>4.0</elevation_m>
       <site>MALANGUANE/TALAU</site>
       <country>ID</country>
       <site_type>
@@ -104247,7 +104787,6 @@
     </Station>
     <Station>
       <station_id>WIKD</station_id>
-      <wmo_id>96249</wmo_id>
       <latitude>-2.75</latitude>
       <longitude>107.75</longitude>
       <elevation_m>44.0</elevation_m>
@@ -104287,6 +104826,18 @@
       <longitude>104.57</longitude>
       <elevation_m>31.0</elevation_m>
       <site>SINGKEP/DABO</site>
+      <country>ID</country>
+      <site_type>
+        <METAR />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>WILL</station_id>
+      <wmo_id>96249</wmo_id>
+      <latitude>-5.25</latitude>
+      <longitude>105.18</longitude>
+      <elevation_m>83.0</elevation_m>
+      <site>BANDAR LAMPUNG</site>
       <country>ID</country>
       <site_type>
         <METAR />
@@ -105559,6 +106110,17 @@
       <site_type>
         <METAR />
         <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>YBSU</station_id>
+      <latitude>-26.6</latitude>
+      <longitude>153.08</longitude>
+      <elevation_m>4.0</elevation_m>
+      <site>SUNSHINE COAST</site>
+      <country>AU</country>
+      <site_type>
+        <METAR />
       </site_type>
     </Station>
     <Station>
@@ -107662,6 +108224,7 @@
     </Station>
     <Station>
       <station_id>ZYMD</station_id>
+      <wmo_id>00005</wmo_id>
       <latitude>44.52</latitude>
       <longitude>129.57</longitude>
       <elevation_m>269.0</elevation_m>

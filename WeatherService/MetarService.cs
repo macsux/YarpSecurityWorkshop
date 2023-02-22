@@ -55,7 +55,7 @@ public class MetarService : DataFeedService
                     return null;
                 }
             })
-            .Where(x => x?.ObservationDayTime != null)
+            .Where(x => x?.ObservationDayTime != null && x.Airport != null)
             .Select(x => x!)
             .Where(x => x.ObservationDayTime.Day == DateTime.UtcNow.Day) // only for today
             .ToLookup(x => x.Airport)
